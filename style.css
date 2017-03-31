@@ -1,79 +1,85 @@
 body{
-  width: 1000px;
-  height: 0px;
-  margin-left: auto;
-  margin-right: auto;
+  overflow: hidden;
 }
-header{
-  margin-left: 100px;
-  margin-bottom: 50px;
+.all{
+  overflow: visible;
 }
-header p{
-  display: inline-block;
-  vertical-align: middle;
-}
-header img{
-  border-radius: 50%;
-  border: 2px solid #ff7878;
-}
-.unko{
-  padding-left: 10px;
-  font-size: 40px;
-  cursor: pointer;
-}
-ul {
-  list-style:none;
-  margin: 10px;
-}
-
-ul li {
-  border-radius: 4px 4px 0px 0px;
+img{
   float: left;
-  height: 20px;
-  margin-right: 10px;
-  padding: 5px 15px;
-  border-top: 1px solid #ff7878;
-  border-left: 1px solid #ff7878;
-  border-right: 1px solid #ff7878;
-  color: #ffffff;
-  background-color: #ff7878;
-  cursor: pointer;
-}
-
-ul li.selected {
-  color: #000;
-  background-color: #fff;
-  cursor: default;
 }
 #content{
+  margin-top: 20px;
+  padding: 10px 40px;
   position: relative;
-  top: -1px;
-  z-index: -1;
-  clear: left;
-  height: 100px;
-  padding: 10px;
-  border-top: 1px solid #ff7878;
+  border-radius: 10px;
+	border: 2px solid #ff7878;
 }
-#content p{
+#content:after,#content:before{
+  right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+#content:after{
+  border-color: rgba(255, 255, 255, 0);
+  border-right-color: #ffffff;
+  border-width: 20px;
+  margin-top: -20px;
+}
+#content:before{
+  border-color: rgba(255, 120, 120, 0);
+  border-right-color: #ff7878;
+  border-width: 23px;
+  margin-top: -23px;
+}
+.dick{
+  margin-left: 600px;
+  position: absolute;
+}
+.back{
+  display: inline-block;
+  cursor: pointer;
   font-size: 20px;
-  padding-left: 5px;
-  border-left: 6px solid #ff7878;
+}
+.top{
+  font-size: 40px;
+  margin: 30px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ff7878;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+  display: inline-block;
+}
+li {
+  margin: 0px;
+  padding-top: 30px;
+  cursor: pointer;
+  font-size: 40px;
+
+}
+.title{
+  margin: 0px;
+  padding-top: 70px;
+  font-size: 40px;
 }
 table{
-	border-collapse: separate;
-	border-spacing: 1px;
-	text-align: left;
-	line-height: 1.5;
-	border-top: 1px solid #ccc;
+  padding-top: 10px;
+  font-size: 20px;
+  text-align: left;
 }
 th{
 	padding: 10px;
-	font-weight: bold;
-	vertical-align: top;
-	border-bottom: 1px solid #ccc;
+
 }
 td{
-	padding: 10px 100px;
+	padding: 10px 50px;
+  padding-right: 0px;
 	vertical-align: top;
-	border-bottom: 1px solid #ccc;
+
 }

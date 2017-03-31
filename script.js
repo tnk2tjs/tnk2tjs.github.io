@@ -1,11 +1,12 @@
 $(function(){
-  $(".unko").on("click",function(){
+  $(".back").on("click",function(){
     $("li.selected").removeClass("selected");
     $("#tabmenu_1").addClass("selected");
 
     $("#content > div").hide();
     $("#tabcontent_1").fadeIn();
   })
+
   $("ul").on("click","li",function(){
     //selectedのつけたり外したり
     $("li.selected").removeClass("selected");
