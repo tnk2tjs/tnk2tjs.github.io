@@ -17,5 +17,5 @@ $(function(){
     $("#content > div").hide();
     $("#tabcontent_" + tabID).fadeIn();
   })
-  $("#tabmenu_1").trigger("click");
+  $(".top").trigger("click");
 });
