@@ -1,44 +1,26 @@
 body{
-  overflow: hidden;
+  overflow-y: hidden;
   margin: 30px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 100%;
+  background-color: #f798d9;
+  color: #573f53;
   }
 .all{
   overflow: visible;
   width: 1500px;
   margin: 0 auto;
-
 }
 img{
   float: left;
+}
+a{
+  text-decoration: none;
 }
 #content{
   margin-top: 20px;
   padding: 10px 40px;
   position: relative;
-  border-radius: 10px;
-	border: 2px solid #ff7878;
-}
-#content:after,#content:before{
-  right: 100%;
-	top: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-}
-#content:after{
-  border-color: rgba(255, 255, 255, 0);
-  border-right-color: #ffffff;
-  border-width: 20px;
-  margin-top: -20px;
-}
-#content:before{
-  border-color: rgba(255, 120, 120, 0);
-  border-right-color: #ff7878;
-  border-width: 23px;
-  margin-top: -23px;
 }
 .dick{
   margin-left: 600px;
@@ -53,7 +35,7 @@ img{
   font-size: 40px;
   margin: 30px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #ff7878;
+  border-bottom: 2px solid #8c2a83;
 }
 ul {
   list-style: none;
@@ -65,7 +47,6 @@ li {
   margin-top: 30px;
   cursor: pointer;
   font-size: 40px;
-
 }
 .title{
   margin: 0px;
@@ -76,14 +57,13 @@ table{
   padding-top: 10px;
   font-size: 20px;
   text-align: left;
+  overflow: scroll;
 }
 th{
 	padding: 10px;
-
 }
 td{
 	padding: 10px 50px;
   padding-right: 0px;
 	vertical-align: top;
-
 }
