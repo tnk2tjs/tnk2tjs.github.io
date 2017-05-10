@@ -18,4 +18,12 @@ $(function(){
     $("#tabcontent_" + tabID).fadeIn();
   })
   $(".top").trigger("click");
+
+  //スマフォだったら上に行く
+  $(".back").click(function(){
+    if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+      $( 'html,body' ).animate( {scrollTop:0} , 'slow' ) ;
+    }
+  });
+
 });

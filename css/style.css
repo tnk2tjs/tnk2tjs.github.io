@@ -1,0 +1,136 @@
+body{
+  margin: 30px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 100%;
+  background-color: #2f3442;
+  color: #f5f5ff;
+  }
+.all{
+  overflow: visible;
+  width: 1500px;
+  margin: 0 auto;
+}
+img{
+  float: left;
+}
+a{
+  text-decoration: underline;
+  color: #f5f5ff;
+}
+#content{
+  margin-top: 40px;
+  padding: 10px 40px;
+  position: relative;
+}
+.marisa{
+  margin-left: 600px;
+  position: absolute;
+}
+.back{
+  display: inline-block;
+  cursor: pointer;
+  font-size: 20px;
+}
+.top{
+  font-size: 40px;
+  margin: 30px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #995387;
+}
+ul {
+
+  list-style: none;
+  padding: 0px;
+  display: inline-block;
+}
+li {
+  position: relative;
+  margin: 0px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 40px;
+}
+li::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  background-color: #995387;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+li:hover::after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.title{
+  margin: 0px;
+  padding-top: 40px;
+  font-size: 40px;
+}
+.text{
+  padding-left: 20px;
+}
+table{
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 20px;
+  text-align: left;
+}
+th{
+  padding-top: 10px;
+  padding-right: 50px;
+}
+td{
+  padding-top: 10px;
+  padding-right: 10px;
+  white-space: nowrap;
+  vertical-align: top;
+}
+@media screen and (max-width: 500px) {
+  body{
+    margin: 0px;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .all{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    margin: auto;
+  }
+  img{
+    filter:brightness(20%);
+  }
+  .top{
+    margin: 0px;
+    font-size: 30px;
+  }
+  .marisa{
+    margin-left: 0px;
+  }
+  table{
+    padding-top: 5px;
+    padding-left: 20px;
+    font-size: 18px;
+    text-align: left;
+    display: block;
+  }
+  th{
+    padding-top: 5px;
+    padding-right: 50px;
+    display: block;
+  }
+  td{
+    padding-top: 5px;
+    padding-left: 20px;
+    vertical-align: top;
+    display: block;
+  }
+}
