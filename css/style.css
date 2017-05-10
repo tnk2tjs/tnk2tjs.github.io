@@ -97,7 +97,6 @@ td{
   body{
     margin: 0px;
     position: relative;
-    overflow-x: hidden;
   }
   .all{
     width: 150px;
@@ -106,7 +105,8 @@ td{
     margin: auto;
   }
   img{
-    filter:brightness(20%);
+    filter:brightness(30%);
+    overflow-x: hidden;
   }
   .top{
     margin: 0px;
