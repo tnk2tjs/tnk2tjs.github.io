@@ -94,6 +94,8 @@ td{
   vertical-align: top;
 }
 @media screen and (max-width: 500px) {
+  html{
+  }
   body{
     margin: 0px;
     position: relative;
