@@ -17,7 +17,7 @@ $(function(){
     $("#content > div").hide();
     $("#tabcontent_" + tabID).fadeIn();
   })
-  $(".top").trigger("click");
+  $(".back").trigger("click");
 
   //スマフォだったら上に行く
   $(".back").click(function(){
@@ -26,4 +26,6 @@ $(function(){
     }
   });
 
+  //リンクを新しいタブで開く
+  $('a').attr({'target':'_blank'});
 });
